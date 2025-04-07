@@ -3,17 +3,15 @@
 
 ## 1. 配置全局用户信息
 首次使用 Git 前需设置用户名和邮箱：
-```bash
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
+
+### git config --global user.name "John Doe"
+### git config --global user.email johndoe@example.com
 
 # Git 仓库管理操作指南
 
 ## 1. 初始化本地仓库
 在目标目录中执行以下命令初始化仓库：
-```bash
-git init
-
+### git init
 
 ## ‌1. 初始化本地仓库‌
 在目标目录中执行以下命令，使该目录成为 Git 管理的仓库：
