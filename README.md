@@ -1,9 +1,27 @@
+---
+# Git 操作完整指南
+
+## 1. 配置全局用户信息
+首次使用 Git 前需设置用户名和邮箱：
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+# Git 仓库管理操作指南
+
+## 1. 初始化本地仓库
+在目标目录中执行以下命令初始化仓库：
+```bash
+git init
+
+
 ## ‌1. 初始化本地仓库‌
 在目标目录中执行以下命令，使该目录成为 Git 管理的仓库：
 ### git init
 
 ‌## 2. 添加目录名称到暂存区‌
 若目录为空，需先创建一个占位文件（如 .gitkeep）以保留目录结构：
+
 ### git add README.md
 
 
@@ -25,3 +43,6 @@
 ‌## 6. 推送目录到远程仓库
 ### git push -u origin main
 
+
+## 7.修改代理：
+### git config --global http.proxy http://127.0.0.1:7890
