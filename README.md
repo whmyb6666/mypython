@@ -48,3 +48,17 @@ git push -u origin main
 ```js
 git config --global http.proxy http://127.0.0.1:7890
 ```
+
+### 8.删除文件
+```js
+git init
+
+git rm <filname>    删除本地文件和远程文件
+git rm --cached <filname>   删除远程文件，保留本地文件
+
+
+-删除文件夹缓存：使用命令git rm -r --cached 文件夹，递归删除文件夹在缓存区的记录，本地文件夹及其文件不受影响。比如删除 “test_folder” 在缓存区的记录，输入git rm -r --cached test_folder 。
+
+git commit -m '删除某个文件'
+git push -u origin main
+```
