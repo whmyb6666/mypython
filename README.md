@@ -53,11 +53,16 @@ git config --global http.proxy http://127.0.0.1:7890
 ```js
 git init
 
+-删除文件：
 git rm <filname>    删除本地文件和远程文件
-git rm --cached <filname>   删除远程文件，保留本地文件
+git rm --cached <filname>   删除远程仓库文件，保留本地文件
 
-
--删除文件夹缓存：使用命令git rm -r --cached 文件夹，递归删除文件夹在缓存区的记录，本地文件夹及其文件不受影响。比如删除 “test_folder” 在缓存区的记录，输入git rm -r --cached test_folder 。
+-删除文件夹：
+如果要删除文件夹，使用命令git rm -r 文件夹，其中 “-r” 表示递归删除，即删除文件夹及其下的所有文件和子文件夹。
+比如要删除名为 “test_folder” 的文件夹，输入git rm -r test_folder。
+-删除文件夹缓存：
+使用命令git rm -r --cached 文件夹，递归删除文件夹在缓存区的记录，本地文件夹及其文件不受影响。
+比如删除 “test_folder” 在缓存区的记录，输入git rm -r --cached test_folder 。
 
 git commit -m '删除某个文件'
 git push -u origin main
